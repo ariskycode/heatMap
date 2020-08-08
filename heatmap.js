@@ -87,10 +87,12 @@ map.data.addListener('mouseout', mouseOutOfRegion);
 // state polygons only need to be loaded once, do them now
 loadMapShapes();
 
-google.maps.event.addListenerOnce(map.data, 'addfeature', function() {
+google.maps.event.addListener(map.data, 'addfeature', function() {
     firmCount.forEach(function(state) {
-        console.log(state.stateId);
-    map.data.getFeatureById(state.stateId).setProperty('count', state.count);
+        if(map.data.getFeatureById(state.stateId)) {
+            console.log(state.stateId);
+            map.data.getFeatureById(state.stateId).setProperty('count', state.count);
+        }
     });   
 });
 
