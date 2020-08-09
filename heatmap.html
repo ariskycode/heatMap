@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 <title>Heat Map demo</title>
-<script defer src="https://maps.googleapis.com/maps/api/js?key={YOUR_KEY_HERE}&callback=initMap&libraries=visualization&v=weekly"></script>
+<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClDj1Lr8os8tSpM0ZetMB-7tnorPhWYNo&callback=initMap&libraries=visualization&v=weekly"></script>
 <script src="heatmap.js"></script>
 <style>
     html, body, #map { height: 100%; margin: 0; padding: 0; overflow: hidden; }
@@ -20,6 +20,7 @@
         <span id="data-value"></span>
         <div id="floating-panel">
             <button onclick="toggleHeatmap()">Toggle Heatmap</button>
+            <button onclick="toggleDataLayer()">Toggle Data Layer</button>
             <button onclick="changeGradient()">Change gradient</button>
             <button onclick="changeRadius()">Change radius</button>
             <button onclick="changeOpacity()">Change opacity</button>
