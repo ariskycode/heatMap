@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-<title>Heat Map demo</title>
+<meta name="author" content="Abdul Rahim Shaikh @ariskycode" />
+<title>Google HeatMap Demo</title>
 <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClDj1Lr8os8tSpM0ZetMB-7tnorPhWYNo&callback=initMap&libraries=visualization&v=weekly"></script>
 <script src="heatmap.js"></script>
 <style>
@@ -11,7 +12,6 @@
     #data-value { font-size: 2.0em; font-weight: bold }
     #data-label { font-size: 2.0em; font-weight: normal; padding-right: 10px; }
     #data-label:after { content: ':' }
-    #data-caret { margin-left: -5px; display: none; font-size: 14px; width: 14px}
 </style>
 </head>
 <body>
@@ -26,7 +26,7 @@
             <button onclick="changeOpacity()">Change opacity</button>
         </div>
     </div>
-
+    <div id="legend">States are colored Red to Green on the basis of no of firms registered within the state.</div>
     <div id="map"></div>
     
 </body>

@@ -130,7 +130,7 @@ function mouseInToRegion(e) {
     var percent = (e.feature.getProperty('count')) / 3548449 * 100;
 
     // update the label
-    document.getElementById('data-label').textContent = e.feature.getProperty('NAME');
+    document.getElementById('data-label').textContent = 'No of firms in ' + e.feature.getProperty('NAME');
     document.getElementById('data-value').textContent = e.feature.getProperty('count');
     document.getElementById('data-box').style.display = 'block';
 }
