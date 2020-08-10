@@ -10,7 +10,7 @@
 <style>
     html, body, #map { height: 100%; margin: 0; padding: 0; overflow: hidden; }
     #data-value { font-size: 2.0em; font-weight: bold }
-    #data-label { font-size: 2.0em; font-weight: normal; padding-right: 10px; }
+    #data-label { font-size: 2.0em; font-weight: normal; padding-right: 10px; padding-left: 20px; }
     #data-label:after { content: ':' }
 </style>
 </head>
@@ -19,14 +19,14 @@
         <label id="data-label" for="data-value"></label>
         <span id="data-value"></span>
         <div id="floating-panel">
-            <button onclick="toggleHeatmap()">Toggle Heatmap</button>
-            <button onclick="toggleDataLayer()">Toggle Data Layer</button>
-            <button onclick="changeGradient()">Change gradient</button>
-            <button onclick="changeRadius()">Change radius</button>
-            <button onclick="changeOpacity()">Change opacity</button>
+            <button  onclick="toggleHeatmap()" style="padding: 5px; margin: 20px;">Toggle Heatmap</button>
+            <button  onclick="toggleDataLayer()" style="padding: 5px; margin: 20px;">Toggle Data Layer</button>
+            <button  onclick="changeGradient()"style="padding: 5px; margin: 20px;">Change gradient</button>
+            <button  onclick="changeRadius()" style="padding: 5px; margin: 20px;">Change radius</button>
+            <button  onclick="changeOpacity()" style="padding: 5px; margin: 20px;">Change opacity</button>
         </div>
     </div>
-    <div id="legend">States are colored Red to Green on the basis of no of firms registered within the state.</div>
+    <div id="legend" style="padding: 5px; margin-bottom: 20px; margin-left: 20px; ">States are colored Red to Green on the basis of no of firms registered within the state.</div>
     <div id="map"></div>
     
 </body>
