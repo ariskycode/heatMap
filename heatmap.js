@@ -218,6 +218,8 @@ function initMap() {
         map: map
     });
     
+    toggleDataLayer();
+    
 }
 
 function getPoints() {
